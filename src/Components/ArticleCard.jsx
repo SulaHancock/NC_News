@@ -4,16 +4,15 @@ import React from "react";
 
 
 
+
 const ArticleCard = (props) => {
  return (
         <section className="articleCardBox">
    <p> 
-
      {props.articleTitle} 
-     <p>Author:  {props.articleAuthor}</p>   
-     <p>Topic:     {props.articleTopic}</p>
- <p>Article Created:{props.articleCreated} </p>
-  
+     <p>Author: {props.articleAuthor}</p>   
+     <p>Topic:  {props.articleTopic}</p>
+     <p>Article Created:{props.articleCreated} </p>
    </p>
    <img src={props.articleImg} alt={props.articleTitle}></img>
    <p> {props.articleVotes} {props.articleCommentCount}</p>

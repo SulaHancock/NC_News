@@ -12,7 +12,6 @@ const ArticleListThatWorks = () => {
   const [isLoading, setIsLoading] = useState(false); //state to wait for api to respond so we can run mapping when api data is back
 
   useEffect(() => {
-    //to get all articles from api
     setIsLoading(true);
     fetch("https://sulas-news.onrender.com/api/articles") //make into function 
       .then((response) => response.json())
@@ -20,18 +19,12 @@ const ArticleListThatWorks = () => {
         setArticles(body.articles);
         setIsLoading(false);
       });
-      
-
   }, []); 
 
-
-
    if(isLoading===true){
-    return <p>
-      LOADING....
-    </p>
+    return <p> LOADING....</p>
    }
-   else{ return(
+   else { return (
     <div>
      
       {articles.map((article) => {
@@ -47,14 +40,11 @@ const ArticleListThatWorks = () => {
             articleImg={article.article_img_url}
 
           />
-      
-        
         </div>
-        
           );
       })}
-    </div>)
-   }
+    </div>
+    )}
 }
 
 export default ArticleListThatWorks;

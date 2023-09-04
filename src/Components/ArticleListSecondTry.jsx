@@ -1,28 +1,31 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ArticleCard from "./ArticleCard";
 import { fetchAllArticles } from "../apiCalls";
 
+
+
+//TUESDAY - Think I've done axios correctly - need to NC help for advice
+
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(true);
-    fetchAllArticles()  // api call function 
-    .then((response) => response.json())
-    .then((body) => {
-      setArticles(body.articles);
+    fetchAllArticles().then((articles) => { 
+      setArticles(articles);
       setIsLoading(false);
     });
   }, []);
 
-  if (isLoading) {
+  if (isLoading === true) {
     return <p>LOADING....</p>;
-  } else {
-    return (
+  } 
+  else { return (
       <div>
-        {articles.map((article) => (
-          <div key={article.id}>
+        {articles.map((article) => {
+      return ( //for future - could put link box here, around card so all clickable
+      <div>
             <ArticleCard
               articleTitle={article.title}
               articleAuthor={article.author}
@@ -33,11 +36,11 @@ const ArticleList = () => {
               articleImg={article.article_img_url}
             />
           </div>
-        ))}
-      </div>
-    );
-  }
-};
+        )
+      })}
+        </div>
+  )}
+}
+ 
 
 export default ArticleList;
-
