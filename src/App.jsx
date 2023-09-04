@@ -1,6 +1,6 @@
 
-import ArticleList from '../Components/ArticleList'
-import Header from '../Components/Header'
+import ArticleList from './Components/ArticleList'
+import Header from './Components/Header'
 import './App.css'
 
 

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import ArticleCard from "./ArticleCard"
-import fetchAllArticles from "./apiCalls";
+import ArticleCard from './ArticleCard'
 
 
+//tuesday - trying to make api call into a function - look at email with git responses and use Axios
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]); //state to hold what comes back from api
@@ -18,8 +18,11 @@ const ArticleList = () => {
         setArticles(body.articles);
         setIsLoading(false);
       });
+      
 
-  }, []);
+  }, []); 
+
+
 
    if(isLoading===true){
     return <p>

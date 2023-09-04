@@ -7,6 +7,9 @@
 
 h1 {
   background-color: rgb(212, 208, 208);
+  border-radius: 5%;
+  padding: 30px;
+  margin: auto;
 }
 
 .navBar {
