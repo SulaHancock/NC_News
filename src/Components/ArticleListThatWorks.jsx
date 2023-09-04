@@ -1,3 +1,5 @@
+//This article list works - but needs to be refactored to run a function for API call - option to use axios
+
 import { useEffect } from "react";
 import { useState } from "react";
 import ArticleCard from './ArticleCard'
@@ -5,7 +7,7 @@ import ArticleCard from './ArticleCard'
 
 //tuesday - trying to make api call into a function - look at email with git responses and use Axios
 
-const ArticleList = () => {
+const ArticleListThatWorks = () => {
   const [articles, setArticles] = useState([]); //state to hold what comes back from api
   const [isLoading, setIsLoading] = useState(false); //state to wait for api to respond so we can run mapping when api data is back
 
@@ -55,4 +57,4 @@ const ArticleList = () => {
    }
 }
 
-export default ArticleList;
+export default ArticleListThatWorks;

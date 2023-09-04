@@ -1,4 +1,5 @@
- //Look at git response from yesterday and use Axios
 
-export default fetchAllArticles;
+export function fetchAllArticles() {
+  fetch("https://sulas-news.onrender.com/api/articles")
+       };
 
