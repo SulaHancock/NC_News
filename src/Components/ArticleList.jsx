@@ -11,7 +11,6 @@ const ArticleList = () => {
     setIsLoading(true);
     fetchAllArticles().then((articles) => { 
       setArticles(articles);
-      console.log(articles)
       setIsLoading(false);
     });
   }, []);
@@ -20,12 +19,13 @@ const ArticleList = () => {
     return <p>LOADING....</p>;
   } 
   else { return (
-      <div>
+      <section>
         {articles.map((article) => {
-      return ( //for future - could put link box here, around card so all clickable
-      <div>
+      return ( 
+        <Link to={`/articles/${article_id}`} key={articleTitle}>
             <ArticleCard
               articleTitle={article.title}
+              articleId={article.article_id}
               articleAuthor={article.author}
               articleTopic={article.topic}
               articleCreated={article.created_at}
@@ -33,10 +33,10 @@ const ArticleList = () => {
               articleCommentCount={article.comment_count}
               articleImg={article.article_img_url}
             />
-          </div>
-        )
+        </Link>
+      )
       })}
-        </div>
+        </section>
   )}
 }
  
