@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useState } from "react";
-import ArticleCard from './ArticleCard'
+import ArticleCard from '../Components/ArticleCard'
 
 
 //tuesday - trying to make api call into a function - look at email with git responses and use Axios

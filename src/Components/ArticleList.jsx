@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import ArticleCard from "./ArticleCard";
-import { fetchAllArticles } from "../apiCalls";
+import { fetchAllArticles }  from "../apiCalls";
 
 
 
-//TUESDAY - Think I've done axios correctly - need to NC help for advice
+//TUESDAY - Think I've done axios correctly, similar to Lee's space code, but not rendering - need to NC help for advice
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
@@ -14,6 +14,7 @@ const ArticleList = () => {
     setIsLoading(true);
     fetchAllArticles().then((articles) => { 
       setArticles(articles);
+      console.log(articles)
       setIsLoading(false);
     });
   }, []);

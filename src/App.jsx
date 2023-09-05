@@ -1,5 +1,5 @@
 
-import ArticleList from './Components/ArticleListSecondTry' //second try
+import ArticleList from './Components/ArticleList' //second try
 import Header from './Components/Header'
 import './App.css'
 
