@@ -3,9 +3,6 @@ import ArticleCard from "./ArticleCard";
 import { fetchAllArticles }  from "../apiCalls";
 
 
-
-//TUESDAY - Think I've done axios correctly, similar to Lee's space code, but not rendering - need to NC help for advice
-
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

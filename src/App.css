@@ -1,3 +1,14 @@
+* {
+  width: 100%;
+  background-color: rgb(237, 235, 235);
+}
+
+@media (min-width: 768px) {
+  * {
+    width: 750px;
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,22 +16,23 @@
   text-align: center;
 }
 
+
+
 h1 {
-  background-color: rgb(212, 208, 208);
-  border-radius: 5%;
-  padding: 30px;
-  margin: auto;
+  background-color: rgb(255, 43, 57);
+  color: white;
+  margin: 0px;
 }
 
 .navBar {
-  background-color: grey;
+  background-color: rgb(255, 43, 57);
 }
 
 .filterBar {
-  background-color: rgb(187, 178, 178);
+  background-color: rgb(255, 43, 57);
 }
 
 .articleCardBox {
-  background-color: rgb(239, 235, 235);
+  background-color: rgb(255, 255, 255);
   border-radius: 2%;
 }

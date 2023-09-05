@@ -9,13 +9,14 @@ const ArticleCard = (props) => {
  return (
         <section className="articleCardBox">
    <div> 
-     {props.articleTitle} 
-     <p>Author: {props.articleAuthor}</p>   
-     <p>Topic:  {props.articleTopic}</p>
-     <p>Article Created:{props.articleCreated} </p>
+     <h3 claaName="article_title">{props.articleTitle} </h3>
+     <h5>{props.articleAuthor}</h5>
+     <p className='topic'>{props.articleTopic}</p>   
+     <p className="article_created">{props.articleCreated} </p>
    </div>
    <img src={props.articleImg} alt={props.articleTitle}></img>
-   <p> {props.articleVotes} {props.articleCommentCount}</p>
+   <p className="votes"> Votes: </p>
+   <p className="article_comments">{props.articleVotes} Comments: {props.articleCommentCount}</p>
    
 </section>
 )}
