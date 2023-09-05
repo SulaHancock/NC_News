@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ArticleCard from "./ArticleCard";
 import { fetchAllArticles }  from "../apiCalls";
-
+import { Link } from 'react-router-dom'
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
@@ -22,7 +22,7 @@ const ArticleList = () => {
       <section>
         {articles.map((article) => {
       return ( 
-        <Link to={`/articles/${article_id}`} key={articleTitle}>
+        <Link to={`/article/${article.article_id}`} key={article.article_id}>
             <ArticleCard
               articleTitle={article.title}
               articleId={article.article_id}

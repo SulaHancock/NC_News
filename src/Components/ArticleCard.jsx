@@ -1,9 +1,4 @@
-//Make article cards that will be displayed in ArticleList
-//don't need to import state if not declaring state
 import React from "react";
-
-
-
 
 const ArticleCard = (props) => {
  return (
