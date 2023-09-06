@@ -7,6 +7,7 @@ const CommentList = () => {
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { article_id } = useParams()
+
   useEffect(() => { 
     setIsLoading(true);
     fetchCommentsById(article_id).then((comments) => { 
