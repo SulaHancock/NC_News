@@ -3,15 +3,13 @@ import { fetchCommentsById } from "../apiCalls";
 import CommentCard from './CommentCard'
 import { useParams } from "react-router-dom";
 
-const CommentList = (props) => {
+const CommentList = () => {
   const [comments, setComments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { article_id } = useParams()
-  console.log("from commentsList via props", article_id)
   useEffect(() => { 
     setIsLoading(true);
     fetchCommentsById(article_id).then((comments) => { 
-      console.log('article_id from CommentList', article_id) 
     setComments(comments);
     setIsLoading(false);
     });
