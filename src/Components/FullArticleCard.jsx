@@ -20,21 +20,22 @@ function FullArticleCard(){
         return <p>LOADING....</p>;
       } 
       else { return (
-        <section className="IndividualArticleCard">
-
-          <h3 className="article_title">{article.title} </h3>
+        <section className="Full_Article_Card">
+         <h3 className="article_title">{article.title} </h3>
           <h5>{article.author}</h5>
           <p className='topic'>{article.topic}</p>   
-          <p className="article_created">{article.author} </p>
           <p className="article_body">{article.body}</p>
-        
         <img src={article.article_img_url} alt={article.title}></img>
         <p className="votes"> Votes: </p>
-        <p className="article_comments">{article.votes}</p>
+        <p className="article_votes">{article.votes}</p>
+
+
       </section>
+
       )}
     }
      
 
-export default FullArticleCard;
+
+export default FullArticleCard
 

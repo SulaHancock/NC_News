@@ -22,6 +22,7 @@ h1 {
   background-color: rgb(255, 43, 57);
   color: white;
   margin: 0px;
+  border-radius: 7px;
 }
 
 .navBar {

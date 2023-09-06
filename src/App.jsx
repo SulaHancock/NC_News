@@ -1,22 +1,20 @@
-import Header from './Components/Header'
-import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import Home from './Components/Home'
-import FullArticleCard from './Components/FullArticleCard'
-
+import Header from "./Components/Header";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import ArticleWithComments from "./Components/ArticleWithComments";
 
 function App() {
-    return (
-        <>
-<Header /> 
+  return (
+    <>
+      <Header />
 
-<Routes>
-<Route path="/" element={<Home />}/> 
-<Route path="/article/:article_id" element={<FullArticleCard />}/>
-</Routes>
-</>
-    )
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/articles/:article_id" element={<ArticleWithComments />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
-
+export default App;

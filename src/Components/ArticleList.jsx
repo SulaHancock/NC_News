@@ -22,10 +22,10 @@ const ArticleList = () => {
       <section>
         {articles.map((article) => {
       return ( 
-        <Link to={`/article/${article.article_id}`} key={article.article_id}>
+        <Link to={`/articles/${article.article_id}`} 
+        key={article.article_id}>
             <ArticleCard
               articleTitle={article.title}
-              articleId={article.article_id}
               articleAuthor={article.author}
               articleTopic={article.topic}
               articleCreated={article.created_at}
