@@ -2,19 +2,19 @@ import React from "react";
 
 const ArticleCard = (props) => {
  return (
-        <section className="articleCardBox">
+        <article className="articleCardBox">
    <div> 
      <h3 className="article_title">{props.articleTitle} </h3>
      <h5>{props.articleAuthor}</h5>
      <p className='topic'>{props.articleTopic}</p>   
-     <p className="article_created">{props.articleCreated} </p>
+     <time className="article_created">{props.articleCreated} </time>
      <p className="article_id">{props.article_id}</p>
    </div>
    <img src={props.articleImg} alt={props.articleTitle}></img>
-   <p className="votes"> Votes: </p>
-   <p className="article_comments">{props.articleVotes} Comments: {props.articleCommentCount}</p>
+   <p className="article_votes"> Votes: {props.articleVotes} </p>
+   <p className="article_comments"> Comments: {props.articleCommentCount}</p>
    
-</section>
+</article>
 )}
 
   export default ArticleCard;

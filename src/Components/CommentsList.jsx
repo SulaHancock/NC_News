@@ -16,7 +16,7 @@ const CommentList = () => {
     });
   }, []);
 
-  if (isLoading === true) {
+  if (isLoading) {
     return <p>LOADING....</p>;
   } 
   else { return (
