@@ -101,6 +101,31 @@ color:black;
 background-color: transparent;
 }
 
+.minus_button{
+    background-color: #ff4837;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  .add_button{
+    background-color: #ff4837;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+
+
+
 section {
   background-color: transparent;
 }
