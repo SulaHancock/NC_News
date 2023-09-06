@@ -1,6 +1,8 @@
 * {
   width: 100%;
   background-color: rgb(237, 235, 235);
+  color: black;
+  
 }
 
 @media (min-width: 768px) {
