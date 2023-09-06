@@ -20,14 +20,17 @@ function FullArticleCard(){
         return <p>LOADING....</p>;
       } 
       else { return (
-        <section className="Full_Article_Card">
+        <section className="full_article_card">
+          <header className="articleCard_header">
          <h3 className="article_title">{article.title} </h3>
-          <h5>{article.author}</h5>
-          <p className='topic'>{article.topic}</p>   
+          <h5 className="article_author">{article.author}</h5>
+          <p className='article_topic'>{article.topic}</p>   
+          </header>
+          <img className="article_image" src={article.article_img_url} alt={article.title}></img>
           <p className="article_body">{article.body}</p>
-        <img src={article.article_img_url} alt={article.title}></img>
-        <p className="votes"> Votes: </p>
-        <p className="article_votes">{article.votes}</p>
+        <p className="article_votes"> Votes {article.votes}</p>
+        <p className="article_comments">Comments {article.comments}</p>
+        
 
 
       </section>
