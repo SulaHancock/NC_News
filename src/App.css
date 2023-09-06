@@ -1,8 +1,8 @@
-* {
-  width: 100%;
-  background-color: rgb(237, 235, 235);
-
-  
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -11,26 +11,19 @@
   }
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
-
 .page_title {
   color: black;
-  background-color: rgb(255, 43, 57);
-  color: white;
+  background-color:white;
+  color:black;
   margin: 0px;
+  padding: 0px;
   border-radius: 7px;
+
 }
 
 .navBar {
   color: black;
-  background-color: rgb(255, 43, 57);
+  background-color: #b80000;
 }
 
 .filterBar {
@@ -38,23 +31,62 @@
   background-color: rgb(255, 43, 57);
 }
 
-.single_article_page {
+.article_card {
   background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.article_mini_title {
+  background-color: transparent;
+color:black;
+text-align: left;
+}
+ .author_mini_card {
+  background-color: transparent;
+ }
+
+ .topic_mini_card {
+  background-color: transparent;
+ }
+ 
+ .article_mini_created {
+  background-color: transparent;
+ }
+
+ .article_mini_votes {
+  background-color: transparent;
+ }
+
+ .article_mini_comments {
+  background-color: transparent;
+ }
+
+ .article_mini_image {
+  border-radius: 8px;
+  width: 98%;
+  box-shadow: 2px 2px 2px rgb(170, 167, 167);
+ }
+
+.single_article_page {
+  background-color: transparent;
 padding: 15px;
 border-radius: 8px;
 
 }
 
 .full_article_card {
-  background-color: rgb(234, 232, 232);
+  background-color: rgb(243, 242, 242);
 
   margin:0px 0px 10px 0px;
   border-radius: 8px;
+  box-shadow: 10px;
+  box-shadow: 2px 5px 5px rgb(170, 167, 167);
 }
 
 .articleCard_header{
   background-color: transparent;
-  
+
 }
 
 .article_title {
@@ -87,11 +119,12 @@ background-color: transparent;
   background-color: transparent;
   text-align: left;
   border-radius: 10px;
-  padding: 5px
+  padding: 5px;
+font-size: 15px;
 }
 
 .article_image {
-  background-color: white;
+  background-color: transparent;
   border-radius: 8px;
   width: 93%;
 }
@@ -103,6 +136,7 @@ background-color: transparent;
 
 .minus_button{
     background-color: #ff4837;
+    box-shadow: 2px 4px 5px rgb(170, 167, 167);
     border: none;
     color: white;
     text-align: center;
@@ -111,17 +145,22 @@ background-color: transparent;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 40px;
+    width: 70px;
+    height: 40px;
   }
   .add_button{
     background-color: #ff4837;
+    box-shadow: 2px 4px 5px rgb(170, 167, 167);
     border: none;
     color: white;
-    text-align: center;
+    text-align:center;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 40px;
+    width: 70px;
+    height:40px;
   }
 
 
@@ -131,17 +170,17 @@ section {
 }
 
 .article_comments {
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: transparent;
 }
 
 .comment_card {
-
-align-content: center;
-  background-color: rgb(227, 82, 82);
+  align-content: center;
+  background-color: rgb(209, 209, 211);
   border-radius: 5px;
   padding: 10px;
-  margin: 0px 0px 5px 0px
+  margin: 0px 0px 5px 0px;
+  box-shadow: 2px 5px 5px rgb(170, 167, 167);
 }
 
 .comment_body {
@@ -149,11 +188,13 @@ background-color:white;
 padding: 5px;
 border-radius: 8px;
 text-align: left;
+font-size: 15px;
 
 }
 
 .comment_author{
-  background-color: transparent;
+color: #000000;
+background-color: transparent;
 padding: 10px 0px 0px 0px;
 margin: 0px;
 text-align: left;
