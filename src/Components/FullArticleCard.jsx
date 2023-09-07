@@ -4,7 +4,6 @@ import { fetchArticleById } from '../apiCalls'
 import ArticleVoteSection from './ArticleVoteSection';
 
 
-
 function FullArticleCard(){
     const [article, setArticle] = useState([])
     const [isLoading, setIsLoading] = useState(true);

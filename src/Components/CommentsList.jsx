@@ -20,7 +20,7 @@ const CommentList = () => {
     return <p>LOADING....</p>;
   } 
   else { return (
-      <section>
+      <section className="comment_list">
       
         {comments.map((comment) => {
       return ( 

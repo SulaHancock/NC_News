@@ -32,9 +32,13 @@
 }
 
 .article_card {
-  background-color: white;
+  background-color: rgb(243, 242, 242);
   padding: 15px;
   border-radius: 8px;
+  box-shadow: 2px 5px 5px rgb(170, 167, 167);
+  padding:15px 15px;
+  margin: 0px 0px 10px 0px;
+
 }
 
 .article_mini_title {
@@ -117,6 +121,7 @@ background-color: transparent;
 }
 .article_body {
   background-color: white;
+  color: black;
   box-shadow: 1.5px 1.5px 1px 1.5px rgb(201, 201, 201);
   text-align: left;
   border-radius: 10px;
@@ -131,21 +136,36 @@ font-size: 15px;
 }
 
 .article_votes {
+  color: black;
+}
+
+.article_votes {
   color:black;
   background-color: transparent;
   }
   
   .article_vote_button {
+    color: black;
     background-color:white;
     margin: 0px 5px;
   }
-    
+  
 
-
-section {
-  background-color: transparent;
+.add_comment_box {
+  background-color: rgb(184, 184, 184);
+  color: black;
+  border-radius: 4px;
+  margin: 0px 0px 10px 0px;
 }
 
+.form_entry {
+color:black;
+}
+
+
+.comment_list{
+  background-color: transparent;
+}
 .article_comments {
   color: rgb(0, 0, 0);
   background-color: transparent;
@@ -162,6 +182,7 @@ section {
 
 .comment_body {
 background-color:white;
+color: #000000;
 padding: 5px;
 border-radius: 8px;
 text-align: left;
@@ -177,15 +198,18 @@ margin: 0px;
 text-align: left;
 }
 .comment_date {
+  color: black;
   background-color:transparent;
 text-align: left;
 }
 .comment_votes {
+  color: black;
   background-color: transparent;
   margin: 0px;
   text-align: left;
 }
 .comment_footer{
+  color: #000000;
   background-color:transparent;
   padding: 0px;
 }

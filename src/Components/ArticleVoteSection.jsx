@@ -4,9 +4,6 @@ import { fetchArticleById } from "../apiCalls";
 import { addVoteToApi } from "../apiCalls";
 import { removeVoteFromApi } from "../apiCalls";
 
-/*Next steps:
-- how to keep votes on screen?
-- How to set initial state to votes from db? */
 
 const ArticleVoteSection = () => {
   const [articleVotes, setArticleVotes] = useState(0);
@@ -25,12 +22,13 @@ const ArticleVoteSection = () => {
 function increaseVotes(){
     if (!voted){
     setArticleVotes((articleVotes) => articleVotes + 1);
+    setVoted(true)
     setErr(null)
     addVoteToApi(article_id)
     .catch((err)=>{
       setErr('Something has gone wrong, please try again later')
     })
-    setVoted(true)
+   
     }
     
   };
