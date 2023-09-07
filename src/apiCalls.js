@@ -26,11 +26,11 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
           });
           };
 
-          // Q7 export function FetchArticleVotesByID(article_id) {
-          //   return axios.get(`${BASE_URL}/articles/${article_id}/votes`) /*will this work? do a fetchArticlesById instead?*/
-          //   .then((articles)=>{
-          //     console.log("votes-->", articles.data)
-          //     return articles.data
-            
-          //   })
-          // }
+          /*Q7 - updating db with votes and getting updated data back */
+         export function AddVoteToApi(article_id){ /*need to pass anything else in too?*/
+          axios.patch(`${BASE_URL}/articles/${article_id}`, {inc_votes: 1})//from backend 
+            .then((response)=>{
+              setArticleVotes(response.data.votes)
+              console.log("increased votes, votes are now: ", {articleVotes});
+            })
+          }

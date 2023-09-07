@@ -135,34 +135,11 @@ font-size: 15px;
   background-color: transparent;
   }
   
-  .minus_button{
-      background-color: #ff4837;
-      box-shadow: 2px 4px 5px rgb(170, 167, 167);
-      border: none;
-      color: white;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 40px;
-      width: 70px;
-      height: 40px;
-    }
-    .add_button{
-      background-color: #ff4837;
-      box-shadow: 2px 4px 5px rgb(170, 167, 167);
-      border: none;
-      color: white;
-      text-align:center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 40px;
-      width: 70px;
-      height:40px;
-    }
+  .article_vote_button {
+    background-color:white;
+    margin: 0px 5px;
+  }
+    
 
 
 section {

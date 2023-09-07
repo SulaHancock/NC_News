@@ -1,20 +1,32 @@
 import { useState , useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchArticleById } from "../apiCalls";
+import { AddVoteToApi } from "../apiCalls";
 
+/*Next steps:
+- how to keep votes on screen?
+- How to set initial state to votes from db? */
 
-const ArticleVoteButtons = () => {
-  const [articleVotes, setArticleVotes] = useState(0); /*what to set as initially? - will user see 0 briefly before useEffect works?*/
-  const { article_id } = useParams(); /*how to get article_votes via params?*/
+const ArticleVoteSection = () => {
+  const [articleVotes, setArticleVotes] = useState(0);
+  const [voted, setVoted] = useState(false);
+  const { article_id } = useParams(); 
+
 
   useEffect(() => {
-    fetchArticleById(article_id).then((article) => {
-      setArticleVotes(article.votes);
+    fetchArticleById(article_id)
+    .then((article) => {
+    setArticleVotes(article.votes);
     });
   }, [article_id]);
 
-  const increaseVotes = () => {
-    setArticleVotes((articleVotes) => articleVotes + 1);
+function increaseVotes(){
+    if (!voted){
+    setArticleVotes((articleVotes) => articleVotes + 1); /*changes UI only - doesn't update db*/
+    AddVoteToApi(article_id)//updates db with click vote
+    setVoted(true)
+    }
+    
   };
 
   const decreaseVotes = () => {
@@ -23,11 +35,12 @@ const ArticleVoteButtons = () => {
 
   return (
     <section className="article_vote_buttons">
-        <p className="article_vote_count">{articleVotes}</p>
-      <button onClick={increaseVotes}>+</button>
-      <button onClick={decreaseVotes}>-</button>
+        <p className="article_vote_count">Votes: {articleVotes}</p>
+        <button className="article_vote_button" onClick={decreaseVotes}>-</button>
+      <button className="article_vote_button" onClick={increaseVotes}>+</button>
+  
     </section>
   );
 };
 
-export default ArticleVoteButtons;
+export default ArticleVoteSection;
