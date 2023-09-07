@@ -77,7 +77,7 @@ border-radius: 8px;
 
 .full_article_card {
   background-color: rgb(243, 242, 242);
-
+  padding: 10px 10px 15px 10px;
   margin:0px 0px 10px 0px;
   border-radius: 8px;
   box-shadow: 10px;
@@ -116,7 +116,8 @@ background-color: transparent;
 
 }
 .article_body {
-  background-color: transparent;
+  background-color: white;
+  box-shadow: 1.5px 1.5px 1px 1.5px rgb(201, 201, 201);
   text-align: left;
   border-radius: 10px;
   padding: 5px;
@@ -130,39 +131,38 @@ font-size: 15px;
 }
 
 .article_votes {
-color:black;
-background-color: transparent;
-}
-
-.minus_button{
-    background-color: #ff4837;
-    box-shadow: 2px 4px 5px rgb(170, 167, 167);
-    border: none;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 40px;
-    width: 70px;
-    height: 40px;
+  color:black;
+  background-color: transparent;
   }
-  .add_button{
-    background-color: #ff4837;
-    box-shadow: 2px 4px 5px rgb(170, 167, 167);
-    border: none;
-    color: white;
-    text-align:center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 40px;
-    width: 70px;
-    height:40px;
-  }
-
+  
+  .minus_button{
+      background-color: #ff4837;
+      box-shadow: 2px 4px 5px rgb(170, 167, 167);
+      border: none;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 40px;
+      width: 70px;
+      height: 40px;
+    }
+    .add_button{
+      background-color: #ff4837;
+      box-shadow: 2px 4px 5px rgb(170, 167, 167);
+      border: none;
+      color: white;
+      text-align:center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 40px;
+      width: 70px;
+      height:40px;
+    }
 
 
 section {

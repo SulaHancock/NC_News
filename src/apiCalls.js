@@ -25,3 +25,12 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
 
           });
           };
+
+          // Q7 export function FetchArticleVotesByID(article_id) {
+          //   return axios.get(`${BASE_URL}/articles/${article_id}/votes`) /*will this work? do a fetchArticlesById instead?*/
+          //   .then((articles)=>{
+          //     console.log("votes-->", articles.data)
+          //     return articles.data
+            
+          //   })
+          // }

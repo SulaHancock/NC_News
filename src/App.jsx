@@ -3,7 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import ArticleWithComments from "./Components/ArticleWithComments";
-//see Edd's feedback for Q6
+
 function App() {
   return (
     <>

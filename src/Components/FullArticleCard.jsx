@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchArticleById } from '../apiCalls'
+import ArticleVoteButtons from './ArticleVoteSection';
+
 
 
 function FullArticleCard(){
@@ -28,13 +30,8 @@ function FullArticleCard(){
           </header>
           <img className="article_image" src={article.article_img_url} alt={article.title}></img>
           <p className="article_body">{article.body}</p>
-        <p className="article_votes"> Votes {article.votes}</p>
-        <button className="minus_button">-</button>
-        <button className="add_button">+</button>
         <p className="article_comments">Comments {article.comments}</p>
-        
-
-
+        <ArticleVoteButtons />
       </section>
 
       )}
