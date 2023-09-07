@@ -1,8 +1,8 @@
-* {
-  width: 100%;
-  background-color: rgb(237, 235, 235);
-  color: black;
-  
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -11,31 +11,181 @@
   }
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
-
-h1 {
-  background-color: rgb(255, 43, 57);
-  color: white;
+.page_title {
+  color: black;
+  background-color:white;
+  color:black;
   margin: 0px;
+  padding: 0px;
   border-radius: 7px;
+
 }
 
 .navBar {
-  background-color: rgb(255, 43, 57);
+  color: black;
+  background-color: #b80000;
 }
 
 .filterBar {
+  color: black;
   background-color: rgb(255, 43, 57);
 }
 
-.articleCardBox {
-  background-color: rgb(255, 255, 255);
-  border-radius: 2%;
+.article_card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.article_mini_title {
+  background-color: transparent;
+color:black;
+text-align: left;
+}
+ .author_mini_card {
+  background-color: transparent;
+ }
+
+ .topic_mini_card {
+  background-color: transparent;
+ }
+ 
+ .article_mini_created {
+  background-color: transparent;
+ }
+
+ .article_mini_votes {
+  background-color: transparent;
+ }
+
+ .article_mini_comments {
+  background-color: transparent;
+ }
+
+ .article_mini_image {
+  border-radius: 8px;
+  width: 98%;
+  box-shadow: 2px 2px 2px rgb(170, 167, 167);
+ }
+
+.single_article_page {
+  background-color: transparent;
+padding: 15px;
+border-radius: 8px;
+
+}
+
+.full_article_card {
+  background-color: rgb(243, 242, 242);
+  padding: 10px 10px 15px 10px;
+  margin:0px 0px 10px 0px;
+  border-radius: 8px;
+  box-shadow: 10px;
+  box-shadow: 2px 5px 5px rgb(170, 167, 167);
+}
+
+.articleCard_header{
+  background-color: transparent;
+
+}
+
+.article_title {
+  color: black;
+background-color:transparent;
+text-align: left;
+padding: 2px 0px 0px 2px ;
+margin: 0px;
+
+}
+
+.article_author{
+  color: rgb(0, 0, 0);
+background-color: transparent;
+  text-align: left;
+  margin: 2px 0px;
+  padding: 2px 0px 2px 2px;
+}
+
+.article_topic {
+  color: rgb(17, 16, 16);
+  background-color: transparent;
+  text-align: left;
+  font-size: small;
+  margin: 2px 0px;
+  padding: 2px 0px 2px 2px;
+
+}
+.article_body {
+  background-color: white;
+  box-shadow: 1.5px 1.5px 1px 1.5px rgb(201, 201, 201);
+  text-align: left;
+  border-radius: 10px;
+  padding: 5px;
+font-size: 15px;
+}
+
+.article_image {
+  background-color: transparent;
+  border-radius: 8px;
+  width: 93%;
+}
+
+.article_votes {
+  color:black;
+  background-color: transparent;
+  }
+  
+  .article_vote_button {
+    background-color:white;
+    margin: 0px 5px;
+  }
+    
+
+
+section {
+  background-color: transparent;
+}
+
+.article_comments {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.comment_card {
+  align-content: center;
+  background-color: rgb(209, 209, 211);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px 0px 8px 0px;
+  box-shadow: 2px 5px 5px rgb(170, 167, 167);
+}
+
+.comment_body {
+background-color:white;
+padding: 5px;
+border-radius: 8px;
+text-align: left;
+font-size: 15px;
+
+}
+
+.comment_author{
+color: #000000;
+background-color: transparent;
+padding: 10px 0px 0px 0px;
+margin: 0px;
+text-align: left;
+}
+.comment_date {
+  background-color:transparent;
+text-align: left;
+}
+.comment_votes {
+  background-color: transparent;
+  margin: 0px;
+  text-align: left;
+}
+.comment_footer{
+  background-color:transparent;
+  padding: 0px;
 }

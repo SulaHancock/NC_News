@@ -4,7 +4,7 @@ import FilterBar from "./FilterBar";
 const Header = () => {
   return (
 <>
-      <h1>NC NEWS</h1>
+      <h1 className="page_title">NC NEWS</h1>
       <NavBar />
       <FilterBar />
   </> 

@@ -25,3 +25,17 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
 
           });
           };
+
+         export function addVoteToApi(article_id){ 
+          axios.patch(`${BASE_URL}/articles/${article_id}`, {inc_votes: 1})
+            .then((response)=>{
+              setArticleVotes(response.data.votes)
+              console.log("increased votes, votes are now: ", {articleVotes});
+            })
+          }
+          export function removeVoteFromApi(article_id){ 
+            axios.patch(`${BASE_URL}/articles/${article_id}`, {inc_votes: -1})
+              .then((response)=>{
+                setArticleVotes(response.data.votes)
+              })
+            }

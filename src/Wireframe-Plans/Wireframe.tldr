@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 3373.93941473495,
-      "y": 2616.282527870111,
-      "lastActivityTimestamp": 1693996730043,
+      "x": 2419.657749618541,
+      "y": 3083.8957006977726,
+      "lastActivityTimestamp": 1694073897942,
       "meta": {}
     },
     {
@@ -79,9 +79,9 @@
       "typeName": "page"
     },
     {
-      "x": 240.90976087359365,
-      "y": -1427.9685508270984,
-      "z": 0.16248862917168594,
+      "x": -896.7216972740289,
+      "y": -2085.5006860668577,
+      "z": 0.25894062032113974,
       "meta": {},
       "id": "camera:page:E6OKwq1y0vwzk7pMchadi",
       "typeName": "camera"
@@ -124,7 +124,7 @@
         "x": 0,
         "y": 0,
         "w": 1263.60009765625,
-        "h": 546
+        "h": 710.4000244140625
       },
       "zoomBrush": null,
       "isGridMode": false,
@@ -7579,8 +7579,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1689.7942932886663,
-      "y": 2881.457914419803,
+      "x": 2402.276561837846,
+      "y": 2838.5547384475585,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -7589,8 +7589,8 @@
       "props": {
         "color": "green",
         "size": "m",
-        "w": 788.8129258766999,
-        "text": "ArticleVoteArrow",
+        "w": 847.2481931176259,
+        "text": "ArticleVoteButtons",
         "font": "draw",
         "align": "start",
         "autoSize": true,
@@ -7602,8 +7602,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1649.0309173383216,
-      "y": 2885.958404942103,
+      "x": 2361.513185887502,
+      "y": 2843.0552289698585,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -7631,8 +7631,8 @@
       "typeName": "shape"
     },
     {
-      "x": 496.10803451858317,
-      "y": 2906.2230474994967,
+      "x": 1201.2226838949186,
+      "y": 2866.6507038698146,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -7689,8 +7689,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1836.8862702686515,
-      "y": 2696.538402567415,
+      "x": 2512.167683702657,
+      "y": 2681.0787653471393,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -7724,8 +7724,8 @@
       "typeName": "shape"
     },
     {
-      "x": 4629.090813676726,
-      "y": 3218.4344107474303,
+      "x": 4599.961222587048,
+      "y": 3218.7887527017797,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -7734,8 +7734,8 @@
       "props": {
         "color": "green",
         "size": "m",
-        "w": 904.7181692312072,
-        "text": "CommentVoteArrow",
+        "w": 963.1189277211411,
+        "text": "CommentVoteButtons",
         "font": "draw",
         "align": "start",
         "autoSize": true,

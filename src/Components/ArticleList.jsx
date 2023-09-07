@@ -19,7 +19,7 @@ const ArticleList = () => {
     return <p>LOADING....</p>;
   } 
   else { return (
-      <section>
+      <section className='behind_comment_card'>
         {articles.map((article) => {
       return ( 
         <Link to={`/articles/${article.article_id}`} 
@@ -35,9 +35,13 @@ const ArticleList = () => {
             />
         </Link>
       )
+
       })}
+
         </section>
+       
   )}
+
 }
  
 
