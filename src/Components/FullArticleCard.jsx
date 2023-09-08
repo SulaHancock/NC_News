@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchArticleById } from '../apiCalls'
-import ArticleVoteSection from './ArticleVoteSection';
+import ArticleVote from './ArticleVote';
 
 
 function FullArticleCard(){
@@ -30,7 +30,7 @@ function FullArticleCard(){
           <img className="article_image" src={article.article_img_url} alt={article.title}></img>
           <p className="article_body">{article.body}</p>
         <p className="article_comments">Comments {article.comments}</p>
-        <ArticleVoteSection />
+        <ArticleVote />
       </section>
 
       )}

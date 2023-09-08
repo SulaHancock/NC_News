@@ -5,7 +5,7 @@ import { addVoteToApi } from "../apiCalls";
 import { removeVoteFromApi } from "../apiCalls";
 
 
-const ArticleVoteSection = () => {
+const ArticleVote = () => {
   const [articleVotes, setArticleVotes] = useState(0);
   const [voted, setVoted] = useState(false);
   const [err, setErr] = useState(null)
@@ -56,4 +56,4 @@ function increaseVotes(){
   );
 };
 
-export default ArticleVoteSection;
+export default ArticleVote;

@@ -21,8 +21,8 @@ const CommentList = () => {
   } 
   else { return (
       <section className="comment_list">
-      
-        {comments.map((comment) => {
+ 
+        {comments.map((comment) => { //how to make sure coming back in date order? 
       return ( 
         <div key={comment.comment_id}>
             <CommentCard 

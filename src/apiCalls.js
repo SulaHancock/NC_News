@@ -39,3 +39,16 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
                 setArticleVotes(response.data.votes)
               })
             }
+
+            export function postComment(){
+              axios.post(`${BASE_URL}/articles/${article_id}/comments`, {body:newComment}) 
+              .then((response)=>{
+                setNewComment(response.data.body)//don't think I need this
+              })
+            }
+
+    /*"POST /api/articles/:article_id/comments": {
+"description": "adds comment for given article_id",
+"queries": [],
+"exampleResponse": { "username": "butter_bridge", "body":  "Here I am posting something I'm not supposed to!" }
+}, */
