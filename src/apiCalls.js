@@ -40,10 +40,12 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
               })
             }
 
-            export function postComment(){
-              axios.post(`${BASE_URL}/articles/${article_id}/comments`, {body:newComment}) 
+            export function postComment(article_id, newComment){
+              const {username, body} = newComment 
+              axios.post(`${BASE_URL}/articles/${article_id}/comments`, {username,body}) 
               .then((response)=>{
-                setNewComment(response.data.body)//don't think I need this
+                console.log("came back", response)
+               return response
               })
             }
 
