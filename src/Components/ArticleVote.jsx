@@ -24,11 +24,7 @@ function increaseVotes(){
     setArticleVotes((articleVotes) => articleVotes + 1);
     setVoted(true)
     setErr(null)
-    addVoteToApi(article_id)
-    .catch((err)=>{
-      setErr('Something has gone wrong, please try again later')
-    })
-   
+    addVoteToApi(article_id)   
     }
     
   };
