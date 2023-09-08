@@ -1,5 +1,7 @@
-import CommentList from './CommentsList'
+import CommentList from './CommentList'
 import FullArticleCard from './FullArticleCard'
+
+
 
 
 
@@ -9,7 +11,6 @@ const ArticleWithComments = ()=>{
 <FullArticleCard />
 <CommentList />
 </div>
-    )
-    }
+    )}
 
-export default ArticleWithComments 
+export default ArticleWithComments

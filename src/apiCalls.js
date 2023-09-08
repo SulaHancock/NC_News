@@ -29,13 +29,23 @@ const BASE_URL = "https://sulas-news.onrender.com/api";
          export function addVoteToApi(article_id){ 
           axios.patch(`${BASE_URL}/articles/${article_id}`, {inc_votes: 1})
             .then((response)=>{
-              setArticleVotes(response.data.votes)
-              console.log("increased votes, votes are now: ", {articleVotes});
+              return response.data.votes
             })
           }
+
           export function removeVoteFromApi(article_id){ 
             axios.patch(`${BASE_URL}/articles/${article_id}`, {inc_votes: -1})
               .then((response)=>{
-                setArticleVotes(response.data.votes)
+                return response.data.votes
               })
             }
+
+            export function postComment(article_id, newComment){
+              const {username, body} = newComment 
+              axios.post(`${BASE_URL}/articles/${article_id}/comments`, {username,body}) 
+              .then((response)=>{
+                console.log("came back", response)
+               return response
+              })
+            }
+
